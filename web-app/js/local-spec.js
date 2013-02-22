@@ -44,5 +44,10 @@ describe("Local spec", function() {
     it("should include bundled resource with a special name", function() {
         expect($('#bundledCss')).toHaveGreenBackground();
         expect($('#bundledJs')).toHaveGreenBackground();
-    })
+    });
+
+    it("should include resource with dir and file notation", function() {
+        expect($('#dirAndFileNotationCss')).toHaveGreenBackground();
+        expect($('#dirAndFileNotationJs')).toHaveGreenBackground();
+    });
 });
