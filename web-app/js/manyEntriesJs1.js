@@ -1,0 +1,1 @@
+$('#manyEntriesJs1').css('background-color', '#aabb77');

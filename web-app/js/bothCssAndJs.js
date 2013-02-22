@@ -1,0 +1,1 @@
+$('#bothCssAndJs2').css('background-color', '#aabb77');
