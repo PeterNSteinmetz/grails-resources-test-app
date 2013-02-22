@@ -20,7 +20,7 @@
         <r:require module="bothCssAndJs" />
         <r:require module="dependsOnParent" />
         <r:require module="manyDependentParent" />
-
+        <r:require module="dirAndFileNotation" />
 
         %{-- Below are bundled modules. Include them in traditional way to verify correct bundle name. --}%
         %{-- Deferred JavaScripts from bundles are included at the bottom --}%
@@ -49,6 +49,8 @@
         <rtest:p name="manyDependentParent" />
         <rtest:p name="bundledCss" />
         <rtest:p name="bundledJs" />
+        <rtest:p name="dirAndFileNotationCss" />
+        <rtest:p name="dirAndFileNotationJs" />
 
         <h2>Jasmine results</h2>
 

@@ -55,4 +55,9 @@ modules = {
         resource url: 'css/bundledCss.css'
         resource url: 'js/bundledJs.js'
     }
+
+    dirAndFileNotation {
+        resource url: [dir:'css/nested', file: 'dirAndFileNotation.css']
+        resource url: [dir:'js/nested', file: 'dirAndFileNotation.js']
+    }
 }
