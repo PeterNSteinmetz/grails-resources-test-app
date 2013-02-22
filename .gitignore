@@ -10,8 +10,10 @@
 /.settings
 /*.launch
 /*.tmproj
+/.idea
 /ivy*
 /eclipse
+/*.iml
 
 # default HSQL database files for production mode
 /prodDb.*
