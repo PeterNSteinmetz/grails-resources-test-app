@@ -6,7 +6,8 @@ class ResourcesTestTagLib {
 
     def p = { attrs, body ->
         String name = attrs.name
-        out << "<p id=\"${name}\" class=\"${name}\">${name}</p>"
+        String desc = attrs.desc ?: ""
+        out << "<p id=\"${name}\" class=\"${name}\">${name} <em>${desc}</em></p>"
     }
 
 }

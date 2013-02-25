@@ -50,4 +50,8 @@ describe("Local spec", function() {
         expect($('#dirAndFileNotationCss')).toHaveGreenBackground();
         expect($('#dirAndFileNotationJs')).toHaveGreenBackground();
     });
+
+    it("should rewrite import CSS statements", function() {
+        expect($('#importChild')).toHaveGreenBackground();
+    });
 });
