@@ -70,9 +70,4 @@ modules = {
         defaultBundle false
         resource url: 'http://maps.google.com/maps/api/js?v=3.5&sensor=false', attrs:[type:'js'], disposition: 'head'
     }
-
-    asd {
-        defaultBundle false
-        resource url: 'http://crackhouse.ck/jquery/images/bg.png?you=got&to=be&kidding=true#crackaddicts'
-    }
 }

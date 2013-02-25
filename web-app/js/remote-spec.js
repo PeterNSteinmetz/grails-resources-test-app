@@ -1,12 +1,8 @@
 describe("Remote spec", function() {
-
-//    beforeEach(function() {
-//        player = new Player();
-//        song = new Song();
-//    });
-
-    it("should include google map js without proper extension (GPRESOURCES-116)", function() {
-        expect(typeof google.maps.Load == "function");
+    describe("should include js remote without proper extension (GPRESOURCES-116)", function() {
+        it("google.maps.Map function should be defined in remote js", function() {
+            expect(google.maps.Map).toBeDefined();
+            expect(typeof google.maps.Map).toEqual("function");
+        });
     });
-
 });
