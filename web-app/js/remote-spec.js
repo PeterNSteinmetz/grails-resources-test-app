@@ -5,8 +5,7 @@ describe("Remote spec", function() {
 //        song = new Song();
 //    });
 
-    // GPRESOURCES-116
-    it("should include google map js without proper extension", function() {
+    it("should include google map js without proper extension (GPRESOURCES-116)", function() {
         expect(typeof google.maps.Load == "function");
     });
 
