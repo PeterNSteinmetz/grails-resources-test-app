@@ -45,6 +45,7 @@
             <h2>Specifications:</h2>
             <ul class="spec-list">
                 <li><g:link uri="/localSpec">Local resources specification</g:link></li>
+                <li><g:link uri="/remoteSpec">Remote resources specification</g:link></li>
             </ul>
 		</div>
 	</body>

@@ -8,6 +8,7 @@ class UrlMappings {
 		}
 
         "/localSpec"(view: "/localSpec")
+        "/remoteSpec"(view: "/remoteSpec")
 
 		"/"(view:"/index")
 		"500"(view:'/error')

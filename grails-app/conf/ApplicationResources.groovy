@@ -60,4 +60,9 @@ modules = {
         resource url: [dir:'css/nested', file: 'dirAndFileNotation.css']
         resource url: [dir:'js/nested', file: 'dirAndFileNotation.js']
     }
+
+    // GPRESOURCES-116
+    googlemap {
+        resource url: 'http://maps.google.com/maps/api/js?v=3.5&sensor=false', attrs:[type:'js'], disposition: 'head'
+    }
 }
