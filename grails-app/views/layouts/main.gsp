@@ -30,7 +30,19 @@
 		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
 
         <div class="main">
-		    <g:layoutBody/>
+            <h2 id="toggle-resources">Resources dump (click to toggle)</h2>
+            <div id="resources-dump" style="display: none">
+                <pre>${grailsApplication.mainContext.getBean('grailsResourceProcessor').dumpResources()}</pre>
+            </div>
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    var toggleResources = function() { $("#resources-dump").toggle(); }
+                    $("#toggle-resources").click(toggleResources);
+                });
+            </script>
+
+            <g:layoutBody/>
 
             <script type="text/javascript">
                 (function () {
