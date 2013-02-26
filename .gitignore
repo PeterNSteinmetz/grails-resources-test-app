@@ -36,7 +36,7 @@
 
 # generated files
 /target
-/web-app/WEB-INF/c.tld
-/web-app/WEB-INF/fmt.tld
+/web-app/WEB-INF/tld/c.tld
+/web-app/WEB-INF/tld/fmt.tld
 
 
