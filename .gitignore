@@ -1,8 +1,5 @@
 # .gitignore for Grails 1.2 and 1.3
 
-# web application files
-/web-app/WEB-INF
-
 # IDE support files
 /.classpath
 /.launch
@@ -14,6 +11,7 @@
 /ivy*
 /eclipse
 /*.iml
+*.iws
 
 # default HSQL database files for production mode
 /prodDb.*
@@ -27,10 +25,8 @@
 /test/reports
 /logs
 
-# project release file
+# release files
 /*.war
-
-# plugin release file
 /*.zip
 
 # older plugin install locations
@@ -38,9 +34,9 @@
 /web-app/plugins
 /web-app/WEB-INF/classes
 
-# "temporary" build files
+# generated files
 /target
+/web-app/WEB-INF/c.tld
+/web-app/WEB-INF/fmt.tld
 
-# other
-*.iws
 
