@@ -89,3 +89,6 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+// GPRESOURCES-183 - resourceMappers/ReplacingResourceMapper must exist, false positive will occur otherwise
+grails.resources.mappers.replacing.enabled = false

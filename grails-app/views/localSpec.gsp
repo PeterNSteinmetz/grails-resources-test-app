@@ -22,6 +22,7 @@
         <r:require module="manyDependentParent" />
         <r:require module="dirAndFileNotation" />
         <r:require module="importParentChild" />
+        <r:require module="disableResourceMapperViaConfig" />
 
         %{-- Below are bundled modules. Include them in traditional way to verify correct bundle name. --}%
         %{-- Deferred JavaScripts from bundles are included at the bottom --}%
@@ -52,7 +53,8 @@
         <rtest:p name="bundledJs" />
         <rtest:p name="dirAndFileNotationCss" />
         <rtest:p name="dirAndFileNotationJs" />
-        <rtest:p name="importChild" desc="GPRESOURCES-135, from 1.2-RC1"/>
+        <rtest:p name="importChild" desc="GPRESOURCES-135, fix version: 1.2"/>
+        <rtest:p name="disableResourceMapperViaConfig" desc="GPRESOURCES-183, fix version: 1.2"/>
 
         <h2>Jasmine results</h2>
 

@@ -70,4 +70,9 @@ modules = {
         defaultBundle false
         resource url: 'http://maps.google.com/maps/api/js?v=3.5&sensor=false', attrs:[type:'js'], disposition: 'head'
     }
+
+    // GPRESOURCES-183
+    disableResourceMapperViaConfig {
+        resource url: 'css/disableResourceMapperViaConfig.css'
+    }
 }
