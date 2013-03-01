@@ -27,8 +27,12 @@
 		<r:layoutResources />
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
-
+		<div id="grailsLogo" role="banner">
+            <a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a>
+            <div id="resourcesPluginVersion">
+                Resources plugin: ${applicationContext.getBean('pluginManager').getGrailsPlugin('resources')?.version}
+            </div>
+        </div>
         <div class="main">
             <h2 id="toggle-resources">Resources dump (click to toggle)</h2>
             <div id="resources-dump" style="display: none">
