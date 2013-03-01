@@ -88,6 +88,8 @@ log4j = {
            'org.springframework',
            'org.hibernate',
            'net.sf.ehcache.hibernate'
+
+    debug  'org.grails.plugin.resource.ResourceProcessor'
 }
 
 // GPRESOURCES-183 - resourceMappers/ReplacingResourceMapper must exist, false positive will occur otherwise

@@ -23,11 +23,8 @@
         <r:require module="dirAndFileNotation" />
         <r:require module="importParentChild" />
         <r:require module="disableResourceMapperViaConfig" />
+        <r:require module="bundledJsAndCss" />
 
-        %{-- Below are bundled modules. Include them in traditional way to verify correct bundle name. --}%
-        %{-- Deferred JavaScripts from bundles are included at the bottom --}%
-        %{--<r:require module="bundledJsAndCss" />--}%
-        <link rel="stylesheet" href="static/bundle-simplebundle_head.css">
 
     </head>
     <body>
@@ -58,7 +55,6 @@
 
         <h2>Jasmine results</h2>
 
-        %{-- Below are bundled modules. Include them in traditional way to verify correct bundle name. --}%
-        %{--<r:require module="bundledJsAndCss" />--}%
-        <script type="text/javascript" src="static/bundle-simplebundle_defer.js"></script>
+        <r:require module="bundledJsAndCss" />
+
     </body>
