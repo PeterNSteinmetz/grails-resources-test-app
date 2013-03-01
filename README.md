@@ -16,4 +16,6 @@ Visual test is just an overview. Application uses Jasmine - javascript testing f
 How to run?
 -----------
 
-Just run grails run-app.
+Just run grails run-app to run against default Resources plugin version (latest release).
+For specified plugin version use params -Dresources.version or -Dresources.location (local).
+Warning: between runs against different plugin versions grails clean is strongly recommended.

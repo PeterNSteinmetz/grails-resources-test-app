@@ -1,3 +1,16 @@
+def resourcesPluginVersion = System.getProperty('resources.version')
+def resourcesPluginLocation = System.getProperty('resources.location')
+if (resourcesPluginLocation && resourcesPluginVersion) {
+    throw new IllegalArgumentException('Specify resources.ver OR resources.loc')
+} else if (resourcesPluginLocation) {
+    println "| Using Resources plugin from specified location: $resourcesPluginLocation"
+} else if (resourcesPluginVersion) {
+    println "| Using resources plugin specified version: $resourcesPluginVersion"
+} else {
+    resourcesPluginVersion = '1.2.RC2' // current release
+    println "| Using resources plugin default version: $resourcesPluginVersion"
+}
+
 grails.servlet.version = "2.5" // Change depending on target container compliance (2.5 or 3.0)
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
@@ -41,8 +54,15 @@ grails.project.dependency.resolution = {
     plugins {
         // runtime ":hibernate:$grailsVersion" // not necessary?
         runtime ":jquery:1.8.0"
-        runtime ":resources:1.1.6"
+
+        if (!resourcesPluginLocation) {
+            runtime ":resources:$resourcesPluginVersion"
+        }
 
         build ":tomcat:$grailsVersion"
     }
+}
+
+if (resourcesPluginLocation) {
+    grails.plugin.location.resources = resourcesPluginLocation
 }
