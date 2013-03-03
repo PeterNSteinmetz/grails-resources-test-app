@@ -55,6 +55,4 @@
 
         <h2>Jasmine results</h2>
 
-        <r:require module="bundledJsAndCss" />
-
     </body>
