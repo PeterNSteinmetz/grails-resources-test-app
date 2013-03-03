@@ -15,7 +15,19 @@ Visual test is just an overview. Application uses Jasmine - javascript testing f
 
 How to run?
 -----------
+##### run-app
 
 Just run grails run-app to run against default Resources plugin version (latest release).
-For specified plugin version use params -Dresources.version or -Dresources.location (local).
+
 Warning: between runs against different plugin versions grails clean is strongly recommended.
+##### test-app
+
+Test can be also run with GEB for automation purposes. Just run test-app functional: -echoOut
+
+You can combine test-app with 
+
+##### common options
+ For specified plugin version add to the command one of the following options:
+
+* -Dresources.version=1.1.6 (any public release version of the resources plugin)
+* -Dresources.location=../grails-resources (local inplace resources plugin directory)
