@@ -45,10 +45,18 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
     }
+
+    def gebVersion = "0.9.0-RC-1"
+
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
         // runtime 'mysql:mysql-connector-java:5.1.20'
+        test "org.gebish:geb-spock:$gebVersion"
+        test("org.seleniumhq.selenium:selenium-htmlunit-driver:2.9.0") {
+            excludes "xml-apis", "commons-io", "commons-codec"
+        }
+
     }
 
     plugins {
@@ -60,6 +68,9 @@ grails.project.dependency.resolution = {
         }
 
         build ":tomcat:$grailsVersion"
+
+        test ":spock:0.7",
+             ":geb:$gebVersion"
     }
 }
 
