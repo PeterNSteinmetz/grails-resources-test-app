@@ -1,0 +1,16 @@
+package pages
+
+import geb.Page
+
+/**
+ * Geb page description for localSpec page.
+ *
+ * @author Peter N. Steinmetz
+ */
+class LocalSpecPage extends Page {
+
+  static at = {
+    title ==~ /Local resources specification/
+  }
+
+}
