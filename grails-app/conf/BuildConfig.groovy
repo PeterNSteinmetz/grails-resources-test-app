@@ -60,6 +60,8 @@ grails.project.dependency.resolution = {
         }
 
         build ":tomcat:$grailsVersion"
+        compile ":geb:0.9.0-RC-1"
+
     }
 }
 
