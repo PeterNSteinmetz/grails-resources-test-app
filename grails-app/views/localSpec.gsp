@@ -25,6 +25,8 @@
         <r:require module="disableResourceMapperViaConfig" />
         <r:require module="bundledJsAndCss" />
 
+        <r:external uri="/css/external/external.css"/>
+        <link rel="stylesheet" href="css/adhoc/adhoc.css" type="text/css"/>
 
     </head>
     <body>
@@ -52,6 +54,13 @@
         <rtest:p name="dirAndFileNotationJs" />
         <rtest:p name="importChild" desc="GPRESOURCES-135, fix version: 1.2"/>
         <rtest:p name="disableResourceMapperViaConfig" desc="GPRESOURCES-183, fix version: 1.2"/>
+        <rtest:p name="externalCss" />
+        <rtest:p name="externalJs" />
+        <rtest:p name="adhocCss" />
+        <rtest:p name="adhocJs" />
+
+        <r:external uri="/js/external/external.js"/>
+        <script type="text/javascript" src="js/adhoc/adhoc.js"></script>
 
         <h2>Jasmine results</h2>
 

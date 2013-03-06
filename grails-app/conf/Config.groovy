@@ -94,3 +94,5 @@ log4j = {
 
 // GPRESOURCES-183 - resourceMappers/ReplacingResourceMapper must exist, false positive will occur otherwise
 grails.resources.mappers.replacing.enabled = false
+grails.resources.adhoc.patterns = ["/images/*", "*.css", "*.js"]
+
