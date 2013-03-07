@@ -1,9 +1,8 @@
 describe("Local spec", function() {
 
-//    beforeEach(function() {
-//        player = new Player();
-//        song = new Song();
-//    });
+    it("should rewrite css url", function() {
+       expect($('head').find('link[href$="static/css/_oneEntryCss.css"]').length).toBe(1);
+    });
 
     it("should include one entry css resource", function() {
         expect($('#oneEntryCss')).toHaveGreenBackground();
@@ -54,4 +53,15 @@ describe("Local spec", function() {
     it("should rewrite import CSS statements", function() {
         expect($('#importChild')).toHaveGreenBackground();
     });
+
+    it("should handle external tag form both js and css resources", function() {
+        expect($('#externalCss')).toHaveGreenBackground();
+        expect($('#externalJs')).toHaveGreenBackground();
+    });
+
+    it("should handle adhoc js and css resources", function() {
+        expect($('#adhocCss')).toHaveGreenBackground();
+        expect($('#adhocJs')).toHaveGreenBackground();
+    });
+
 });

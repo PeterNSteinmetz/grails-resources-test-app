@@ -23,11 +23,10 @@
         <r:require module="dirAndFileNotation" />
         <r:require module="importParentChild" />
         <r:require module="disableResourceMapperViaConfig" />
+        <r:require module="bundledJsAndCss" />
 
-        %{-- Below are bundled modules. Include them in traditional way to verify correct bundle name. --}%
-        %{-- Deferred JavaScripts from bundles are included at the bottom --}%
-        %{--<r:require module="bundledJsAndCss" />--}%
-        <link rel="stylesheet" href="static/bundle-simplebundle_head.css">
+        <r:external uri="/css/external/external.css"/>
+        <link rel="stylesheet" href="css/adhoc/adhoc.css" type="text/css"/>
 
     </head>
     <body>
@@ -55,10 +54,14 @@
         <rtest:p name="dirAndFileNotationJs" />
         <rtest:p name="importChild" desc="GPRESOURCES-135, fix version: 1.2"/>
         <rtest:p name="disableResourceMapperViaConfig" desc="GPRESOURCES-183, fix version: 1.2"/>
+        <rtest:p name="externalCss" />
+        <rtest:p name="externalJs" />
+        <rtest:p name="adhocCss" />
+        <rtest:p name="adhocJs" />
+
+        <r:external uri="/js/external/external.js"/>
+        <script type="text/javascript" src="js/adhoc/adhoc.js"></script>
 
         <h2>Jasmine results</h2>
 
-        %{-- Below are bundled modules. Include them in traditional way to verify correct bundle name. --}%
-        %{--<r:require module="bundledJsAndCss" />--}%
-        <script type="text/javascript" src="static/bundle-simplebundle_defer.js"></script>
     </body>
